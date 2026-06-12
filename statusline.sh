@@ -62,10 +62,12 @@ eval "$(printf '%s' "$input" | jq -r '
 ')"
 
 # --- git branch (detached HEAD -> short hash) + dirty marker -------------------
+# --no-optional-locks: a background poller must never take index.lock — plain
+# `git status` may write the index (stat-cache refresh) and race the user's git.
 branch=$(git -C "$cwd" branch --show-current 2>/dev/null)
 [ -z "$branch" ] && branch=$(git -C "$cwd" rev-parse --short HEAD 2>/dev/null)
 dirty=""
-if [ -n "$branch" ] && [ -n "$(git -C "$cwd" status --porcelain 2>/dev/null | head -1)" ]; then
+if [ -n "$branch" ] && [ -n "$(git -C "$cwd" --no-optional-locks status --porcelain 2>/dev/null | head -1)" ]; then
   dirty="${YELLOW}*"
 fi
 
