@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="56" viewBox="0 0 800 56" role="img" aria-label="claude-code-statusline demo">
+  <rect width="800" height="56" rx="10" fill="#181825"/>
+  <text x="22" y="34" font-family="SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" xml:space="preserve"><tspan fill="#56d6d6" font-weight="bold">Fable 5</tspan><tspan fill="#585b70"> | </tspan><tspan fill="#cba6f7">⎇ develop</tspan><tspan fill="#f9e2af">*</tspan><tspan fill="#585b70"> | </tspan><tspan fill="#a6e3a1">ctx 41.9k/1M · left 958.1k</tspan><tspan fill="#585b70"> | </tspan><tspan fill="#89b4fa">spent 166.2k</tspan><tspan fill="#585b70"> | </tspan><tspan fill="#a6e3a1">5h 2%</tspan><tspan fill="#585b70">→01:10</tspan><tspan fill="#585b70"> | </tspan><tspan fill="#f9e2af">7d 52%</tspan><tspan fill="#585b70">→Wed 05:00</tspan></text>
+</svg>
